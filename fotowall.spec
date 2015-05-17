@@ -7,10 +7,17 @@ Group:		Applications/Multimedia
 Source0:	http://fotowall.googlecode.com/files/Fotowall-%{version}.tar.bz2
 # Source0-md5:	142ef697332e0777c6d22c5bc96cc438
 URL:		http://www.enricoros.com/opensource/fotowall/
-BuildRequires:	appstream-glib
+BuildRequires:	QtCore-devel
+BuildRequires:	QtGui-devel
+BuildRequires:	QtGui-devel
+BuildRequires:	QtNetwork-devel
+BuildRequires:	QtOpenGL-devel
+BuildRequires:	QtSvg-devel
+BuildRequires:	QtXml-devel
 BuildRequires:	desktop-file-utils
 BuildRequires:	libv4l-devel
-BuildRequires:	qt-devel >= 4.4
+BuildRequires:	qt4-build
+BuildRequires:	qt4-qmake
 BuildRequires:	rpmbuild(macros) >= 1.596
 Requires:	desktop-file-utils
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
